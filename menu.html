@@ -110,6 +110,8 @@
     footer .addr { line-height: 1.7; }
     footer .addr a { color: var(--gold); text-decoration: none; font-weight: 700; }
     footer .name { font-family: 'Playfair Display', serif; color: #fff; font-weight: 700; }
+    footer .credits { margin-top: 18px; font-size: 10.5px; line-height: 1.6; opacity: .55; }
+    footer .credits a { color: inherit; }
 
     /* Call bar */
     .callbar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 30; background: rgba(26,13,8,.85); -webkit-backdrop-filter: blur(16px); backdrop-filter: blur(16px); border-top: 1px solid var(--glass-brd); padding: 11px 16px calc(11px + env(safe-area-inset-bottom)); }
@@ -161,19 +163,19 @@
 
         <div class="item">
           <img class="item-thumb" src="images/19231574_1785867642498.jpg" alt="Tek Lavaş Tavuk Döner" loading="lazy" />
-          <div class="item-main"><div class="item-body"><div class="item-name">Tek Lavaş Tavuk Döner <span class="tag pop">Popüler</span></div><div class="item-desc">Tek kat lavaş, tavuk döner, sebze, sos</div></div><div class="dots"></div><div class="price">₺160</div></div>
+          <div class="item-main"><div class="item-body"><div class="item-name">Tek Lavaş Tavuk Döner <span class="tag pop">Popüler</span></div><div class="item-desc">Tek kat lavaş, tavuk döner, sebze, sos</div></div><div class="dots"></div><div class="price">₺180</div></div>
         </div>
         <div class="item">
           <img class="item-thumb" src="images/19231575_1785867783576.jpg" alt="Çift Lavaş Tavuk Döner" loading="lazy" />
-          <div class="item-main"><div class="item-body"><div class="item-name">Çift Lavaş Tavuk Döner</div><div class="item-desc">Çift kat lavaş, bol malzemeli</div></div><div class="dots"></div><div class="price">₺180</div></div>
+          <div class="item-main"><div class="item-body"><div class="item-name">Çift Lavaş Tavuk Döner</div><div class="item-desc">Çift kat lavaş, bol malzemeli</div></div><div class="dots"></div><div class="price">₺200</div></div>
         </div>
         <div class="item">
           <img class="item-thumb" src="images/19231576_1785867881405.jpg" alt="Tek Lavaş 1.5 Tavuk Döner" loading="lazy" />
-          <div class="item-main"><div class="item-body"><div class="item-name">Tek Lavaş 1.5 Tavuk Döner <span class="tag pop">Popüler</span></div><div class="item-desc">1.5 kat döner içi, tek lavaş</div></div><div class="dots"></div><div class="price">₺200</div></div>
+          <div class="item-main"><div class="item-body"><div class="item-name">Tek Lavaş 1.5 Tavuk Döner <span class="tag pop">Popüler</span></div><div class="item-desc">1.5 kat döner içi, tek lavaş</div></div><div class="dots"></div><div class="price">₺220</div></div>
         </div>
         <div class="item">
           <img class="item-thumb" src="images/19231575_1785867783576.jpg" alt="Çift Lavaş 1.5 Tavuk Döner" loading="lazy" />
-          <div class="item-main"><div class="item-body"><div class="item-name">Çift Lavaş 1.5 Tavuk Döner</div><div class="item-desc">1.5 kat döner içi, çift lavaş</div></div><div class="dots"></div><div class="price">₺220</div></div>
+          <div class="item-main"><div class="item-body"><div class="item-name">Çift Lavaş 1.5 Tavuk Döner</div><div class="item-desc">1.5 kat döner içi, çift lavaş</div></div><div class="dots"></div><div class="price">₺240</div></div>
         </div>
         <div class="item">
           <img class="item-thumb" src="images/19231579_1785868147523.jpg" alt="Çift Lavaş Duble Tavuk Döner" loading="lazy" />
@@ -181,29 +183,33 @@
         </div>
         <div class="item">
           <img class="item-thumb" src="images/19231577_1779095186394.jpg" alt="Zurna Tavuk Döner" loading="lazy" />
-          <div class="item-main"><div class="item-body"><div class="item-name">Zurna Tavuk Döner <span class="tag pop">Popüler</span></div><div class="item-desc">Uzun dürüm, bol döner</div></div><div class="dots"></div><div class="price">₺220</div></div>
+          <div class="item-main"><div class="item-body"><div class="item-name">Zurna Tavuk Döner <span class="tag pop">Popüler</span></div><div class="item-desc">Uzun dürüm, bol döner</div></div><div class="dots"></div><div class="price">₺240</div></div>
         </div>
         <div class="item">
           <img class="item-thumb" src="images/19231578_1779095200319.jpg" alt="Zurna 1.5 Tavuk Döner" loading="lazy" />
-          <div class="item-main"><div class="item-body"><div class="item-name">Zurna 1.5 Tavuk Döner <span class="tag pop">Popüler</span></div><div class="item-desc">Uzun dürüm, 1.5 kat döner içi</div></div><div class="dots"></div><div class="price">₺240</div></div>
+          <div class="item-main"><div class="item-body"><div class="item-name">Zurna 1.5 Tavuk Döner <span class="tag pop">Popüler</span></div><div class="item-desc">Uzun dürüm, 1.5 kat döner içi</div></div><div class="dots"></div><div class="price">₺260</div></div>
         </div>
         <div class="item">
           <img class="item-thumb" src="images/burrito.jpg" alt="Burrito Tavuk Döner" loading="lazy" />
-          <div class="item-main"><div class="item-body"><div class="item-name">Burrito Tavuk Döner <span class="tag new">Spesyal</span></div><div class="item-desc">Sarma usulü, bol içli spesyal</div></div><div class="dots"></div><div class="price">₺600</div></div>
+          <div class="item-main"><div class="item-body"><div class="item-name">Burrito Tavuk Döner <span class="tag new">Spesyal</span></div><div class="item-desc">Sarma usulü, bol içli spesyal</div></div><div class="dots"></div><div class="price">₺500</div></div>
         </div>
       </section>
 
       <!-- Ekmek Arası -->
       <section class="section" id="ekmek">
-        <div class="section-head"><div class="ico">🥖</div><div><h2>Ekmek Arası</h2><p>Somun ekmekte, doyurucu</p></div></div>
+        <div class="section-head"><div class="ico">🥖</div><div><h2>Ekmek Arası</h2><p>Tombik ve somun ekmekte, doyurucu</p></div></div>
 
         <div class="item">
+          <img class="item-thumb" src="images/tombik-tavuk-doner.jpg" alt="Tombik Tavuk Döner" loading="lazy" />
+          <div class="item-main"><div class="item-body"><div class="item-name">Tombik Tavuk Döner <span class="tag new">Yeni</span></div><div class="item-desc">Tombik ekmek, tavuk döner</div></div><div class="dots"></div><div class="price">₺180</div></div>
+        </div>
+        <div class="item">
           <img class="item-thumb" src="images/20673714_1785933087245.jpg" alt="Yarım Somun Tavuk Döner" loading="lazy" />
-          <div class="item-main"><div class="item-body"><div class="item-name">Yarım Somun Tavuk Döner</div><div class="item-desc">Yarım somun ekmek, tavuk döner</div></div><div class="dots"></div><div class="price">₺160</div></div>
+          <div class="item-main"><div class="item-body"><div class="item-name">Yarım Somun Tavuk Döner</div><div class="item-desc">Yarım somun ekmek, tavuk döner</div></div><div class="dots"></div><div class="price">₺180</div></div>
         </div>
         <div class="item">
           <img class="item-thumb" src="images/somun34.jpg" alt="3 Çeyrek Somun Tavuk Döner" loading="lazy" />
-          <div class="item-main"><div class="item-body"><div class="item-name">3 Çeyrek Somun Tavuk Döner</div><div class="item-desc">Bol döner, somun ekmek</div></div><div class="dots"></div><div class="price">₺250</div></div>
+          <div class="item-main"><div class="item-body"><div class="item-name">3 Çeyrek Somun Tavuk Döner</div><div class="item-desc">Bol döner, somun ekmek</div></div><div class="dots"></div><div class="price">₺260</div></div>
         </div>
         <div class="item">
           <img class="item-thumb" src="images/20673728_1785933067542.jpg" alt="Tam Somun Tavuk Döner" loading="lazy" />
@@ -217,19 +223,19 @@
 
         <div class="item">
           <img class="item-thumb" src="images/19231580_1785868728213.jpg" alt="Porsiyon Tavuk Döner" loading="lazy" />
-          <div class="item-main"><div class="item-body"><div class="item-name">Porsiyon Tavuk Döner</div><div class="item-desc">Tabakta tavuk döner, garnitür</div></div><div class="dots"></div><div class="price">₺280</div></div>
+          <div class="item-main"><div class="item-body"><div class="item-name">Porsiyon Tavuk Döner</div><div class="item-desc">Tabakta tavuk döner, garnitür</div></div><div class="dots"></div><div class="price">₺250</div></div>
         </div>
         <div class="item">
           <img class="item-thumb" src="images/19231581_1785868731276.jpg" alt="Porsiyon 1.5 Tavuk Döner" loading="lazy" />
-          <div class="item-main"><div class="item-body"><div class="item-name">Porsiyon 1.5 Tavuk Döner</div><div class="item-desc">Bol döner, garnitür</div></div><div class="dots"></div><div class="price">₺300</div></div>
+          <div class="item-main"><div class="item-body"><div class="item-name">Porsiyon 1.5 Tavuk Döner</div><div class="item-desc">Bol döner, garnitür</div></div><div class="dots"></div><div class="price">₺280</div></div>
         </div>
         <div class="item">
           <img class="item-thumb" src="images/19231583_1785933237082.jpg" alt="Pilav Üstü Tavuk Döner" loading="lazy" />
-          <div class="item-main"><div class="item-body"><div class="item-name">Pilav Üstü Tavuk Döner <span class="tag pop">Popüler</span></div><div class="item-desc">Tereyağlı pilav, tavuk döner</div></div><div class="dots"></div><div class="price">₺300</div></div>
+          <div class="item-main"><div class="item-body"><div class="item-name">Pilav Üstü Tavuk Döner <span class="tag pop">Popüler</span></div><div class="item-desc">Tereyağlı pilav, tavuk döner</div></div><div class="dots"></div><div class="price">₺280</div></div>
         </div>
         <div class="item">
           <img class="item-thumb" src="images/19231584_1785933294515.jpg" alt="Pilav Üstü 1.5 Tavuk Döner" loading="lazy" />
-          <div class="item-main"><div class="item-body"><div class="item-name">Pilav Üstü 1.5 Tavuk Döner</div><div class="item-desc">Tereyağlı pilav, bol döner</div></div><div class="dots"></div><div class="price">₺350</div></div>
+          <div class="item-main"><div class="item-body"><div class="item-name">Pilav Üstü 1.5 Tavuk Döner</div><div class="item-desc">Tereyağlı pilav, bol döner</div></div><div class="dots"></div><div class="price">₺300</div></div>
         </div>
         <div class="item">
           <img class="item-thumb" src="images/patates.jpg" alt="Patates Üstü Tavuk Döner" loading="lazy" />
@@ -237,7 +243,7 @@
         </div>
         <div class="item">
           <img class="item-thumb" src="images/20688240_1785933906077.jpg" alt="Makarna Üstü Tavuk Döner" loading="lazy" />
-          <div class="item-main"><div class="item-body"><div class="item-name">Makarna Üstü Tavuk Döner</div><div class="item-desc">Soslu makarna üzeri tavuk döner</div></div><div class="dots"></div><div class="price">₺300</div></div>
+          <div class="item-main"><div class="item-body"><div class="item-name">Makarna Üstü Tavuk Döner</div><div class="item-desc">Soslu makarna üzeri tavuk döner</div></div><div class="dots"></div><div class="price">₺250</div></div>
         </div>
         <div class="item">
           <img class="item-thumb" src="images/beyti.jpg" alt="Beyti Tavuk Döner" loading="lazy" />
@@ -251,15 +257,19 @@
 
       <!-- Burger -->
       <section class="section" id="burger">
-        <div class="section-head"><div class="ico">🍔</div><div><h2>Burger</h2><p>Patates ve içecek ile kutu menü</p></div></div>
+        <div class="section-head"><div class="ico">🍔</div><div><h2>Burger</h2><p>Tavuk burgerler, patates ve içecekli menü</p></div></div>
 
         <div class="item">
-          <img class="item-thumb" src="images/19231590_1785928039207.jpg" alt="Burger Box" loading="lazy" />
-          <div class="item-main"><div class="item-body"><div class="item-name">Burger Box <span class="tag pop">Popüler</span></div><div class="item-desc">Burger, patates, içecek</div></div><div class="dots"></div><div class="price">₺400</div></div>
+          <img class="item-thumb" src="images/tavuk-burger.jpg" alt="Tavuk Burger" loading="lazy" />
+          <div class="item-main"><div class="item-body"><div class="item-name">Tavuk Burger</div><div class="item-desc">Çıtır tavuk, burger ekmeği, sos</div></div><div class="dots"></div><div class="price">₺200</div></div>
         </div>
         <div class="item">
-          <img class="item-thumb" src="images/19231591_1785928704605.jpg" alt="Burger Box Duo" loading="lazy" />
-          <div class="item-main"><div class="item-body"><div class="item-name">Burger Box Duo</div><div class="item-desc">2 burger, patates, içecekler</div></div><div class="dots"></div><div class="price">₺800</div></div>
+          <img class="item-thumb" src="images/smash-tavuk-burger.jpg" alt="Smash Tavuk Burger" loading="lazy" />
+          <div class="item-main"><div class="item-body"><div class="item-name">Smash Tavuk Burger</div><div class="item-desc">Ezilerek pişirilmiş tavuk köfte, burger ekmeği</div></div><div class="dots"></div><div class="price">₺350</div></div>
+        </div>
+        <div class="item">
+          <img class="item-thumb" src="images/tavuk-burger-menu.jpg" alt="Tavuk Burger Menü" loading="lazy" />
+          <div class="item-main"><div class="item-body"><div class="item-name">Tavuk Burger Menü <span class="tag pop">Popüler</span></div><div class="item-desc">Tavuk burger, patates, içecek</div></div><div class="dots"></div><div class="price">₺450</div></div>
         </div>
       </section>
 
@@ -267,18 +277,20 @@
       <section class="section" id="icecekler">
         <div class="section-head"><div class="ico">🥤</div><div><h2>İçecekler</h2><p>Serinleten seçenekler</p></div></div>
 
-        <div class="drow"><span class="di">💧</span><span class="dn">Su <span class="dsub">500 ml</span></span><span class="dd"></span><span class="dv">₺20</span></div>
+        <div class="drow"><span class="di">💧</span><span class="dn">Su <span class="dsub">500 ml</span></span><span class="dd"></span><span class="dv">₺25</span></div>
+        <div class="drow"><span class="di">🫧</span><span class="dn">Soda <span class="dsub">200 ml</span></span><span class="dd"></span><span class="dv">₺50</span></div>
         <div class="drow"><span class="di">☕</span><span class="dn">Kahve</span><span class="dd"></span><span class="dv">₺50</span></div>
-        <div class="drow"><span class="di">🥛</span><span class="dn">Ayran <span class="dsub">275 ml</span></span><span class="dd"></span><span class="dv">₺50</span></div>
+        <div class="drow"><span class="di">🥛</span><span class="dn">Ayran <span class="dsub">275 ml</span></span><span class="dd"></span><span class="dv">₺55</span></div>
         <div class="drow"><span class="di">🥛</span><span class="dn">Ayran <span class="dsub">1 L</span></span><span class="dd"></span><span class="dv">₺150</span></div>
-        <div class="drow"><span class="di">🟣</span><span class="dn">Şalgam Acısız <span class="dsub">300 ml</span></span><span class="dd"></span><span class="dv">₺50</span></div>
-        <div class="drow"><span class="di">🌶️</span><span class="dn">Şalgam Acılı <span class="dsub">300 ml</span></span><span class="dd"></span><span class="dv">₺50</span></div>
+        <div class="drow"><span class="di">🟣</span><span class="dn">Şalgam Acısız <span class="dsub">300 ml</span></span><span class="dd"></span><span class="dv">₺55</span></div>
+        <div class="drow"><span class="di">🌶️</span><span class="dn">Şalgam Acılı <span class="dsub">300 ml</span></span><span class="dd"></span><span class="dv">₺55</span></div>
+        <div class="drow"><span class="di">🧃</span><span class="dn">Fuse Tea <span class="dsub">330 ml</span></span><span class="dd"></span><span class="dv">₺85</span></div>
         <div class="drow"><span class="di">🥤</span><span class="dn">Sprite <span class="dsub">330 ml</span></span><span class="dd"></span><span class="dv">₺85</span></div>
         <div class="drow"><span class="di">🥤</span><span class="dn">Fanta <span class="dsub">330 ml</span></span><span class="dd"></span><span class="dv">₺85</span></div>
         <div class="drow"><span class="di">🥤</span><span class="dn">Coca Cola <span class="dsub">330 ml</span></span><span class="dd"></span><span class="dv">₺85</span></div>
         <div class="drow"><span class="di">🥤</span><span class="dn">Coca Cola Zero <span class="dsub">330 ml</span></span><span class="dd"></span><span class="dv">₺85</span></div>
-        <div class="drow"><span class="di">🥤</span><span class="dn">Coca Cola <span class="dsub">1 L</span></span><span class="dd"></span><span class="dv">₺105</span></div>
-        <div class="drow"><span class="di">🥤</span><span class="dn">Coca Cola Zero <span class="dsub">1 L</span></span><span class="dd"></span><span class="dv">₺105</span></div>
+        <div class="drow"><span class="di">🥤</span><span class="dn">Coca Cola <span class="dsub">1 L</span></span><span class="dd"></span><span class="dv">₺110</span></div>
+        <div class="drow"><span class="di">🥤</span><span class="dn">Coca Cola Zero <span class="dsub">1 L</span></span><span class="dd"></span><span class="dv">₺110</span></div>
         <div class="drow"><span class="di">🥤</span><span class="dn">Coca Cola <span class="dsub">2.5 L</span></span><span class="dd"></span><span class="dv">₺125</span></div>
         <div class="drow"><span class="di">🥤</span><span class="dn">Coca Cola Zero <span class="dsub">2.5 L</span></span><span class="dd"></span><span class="dv">₺125</span></div>
       </section>
@@ -296,6 +308,7 @@
         <a href="tel:+905331924831">0533 192 48 31</a>
       </p>
       <p style="margin-top:14px;">Afiyet olsun 🤍</p>
+      <p class="credits">Bazı ürün görselleri temsilidir. Tombik: <a href="https://www.flickr.com/photos/70253321@N00/5682840223" target="_blank" rel="noopener">fugzu</a> (CC BY 2.0) · Smash burger: <a href="https://commons.wikimedia.org/wiki/File:Smashburger.jpg" target="_blank" rel="noopener">Kamil</a> (CC BY-SA 4.0) · Tavuk burger: sarahstierch (CC0)</p>
     </footer>
   </div>
 
