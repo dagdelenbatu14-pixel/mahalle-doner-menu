@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mahalle Döner — Menü</title>
-  <meta name="description" content="Mahalle Döner Bitez, Bodrum — tavuk döner dürüm, porsiyon, burger ve içecek menüsü." />
+  <meta name="description" content="Mahalle Döner Bitez, Bodrum — tavuk döner dürüm, porsiyon, tantuni, burger ve içecek menüsü." />
   <meta name="theme-color" content="#1a0d08" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -110,6 +110,13 @@
     footer .addr { line-height: 1.7; }
     footer .addr a { color: var(--gold); text-decoration: none; font-weight: 700; }
     footer .name { font-family: 'Playfair Display', serif; color: #fff; font-weight: 700; }
+    .cards { background: #fff; border-radius: 22px; padding: 18px 20px 22px; margin: 0 0 18px; box-shadow: 0 10px 30px rgba(0,0,0,.35); }
+    .cards__title { margin: 0 0 14px; font-size: 11px; font-weight: 800; letter-spacing: 1.6px; text-transform: uppercase; color: #b8412a; text-align: center; }
+    .cards__grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 14px 16px; }
+    .cards__grid li { display: flex; align-items: center; justify-content: center; height: 48px; }
+    .cards__grid img { max-width: 100%; max-height: 40px; width: auto; height: auto; object-fit: contain; }
+    .cards__grid img[src$="token-flex.png"] { max-height: 30px; }
+    .cards__grid img[src$="ticket-restaurant.png"] { max-height: 46px; }
     footer .credits { margin-top: 18px; font-size: 10.5px; line-height: 1.6; opacity: .55; }
     footer .credits a { color: inherit; }
 
@@ -138,9 +145,9 @@
       <a href="index.html" class="back-link">← Ana Sayfa</a>
       <div class="badge"><span class="ln"></span> Bitez · Bodrum <span class="ln r"></span></div>
       <h1>Mahalle <span>Döner</span></h1>
-      <p class="tagline">Tavuk döner · Dürüm · Porsiyon · Burger</p>
+      <p class="tagline">Tavuk döner · Dürüm · Tantuni · Burger</p>
       <div class="header-meta">
-        <span>🕐 Her gün 11:00 – 00:00</span>
+        <span>🕐 Her gün 10:00 – 00:00</span>
         <span>📍 Bitez, Cami Sk.</span>
       </div>
     </header>
@@ -150,7 +157,9 @@
         <a href="#durumler">Dürümler</a>
         <a href="#ekmek">Ekmek Arası</a>
         <a href="#porsiyon">Porsiyonlar</a>
+        <a href="#tantuni">Tantuni</a>
         <a href="#burger">Burger</a>
+        <a href="#yan-urunler">Yan Ürünler</a>
         <a href="#icecekler">İçecekler</a>
       </div>
     </nav>
@@ -255,6 +264,28 @@
         </div>
       </section>
 
+      <!-- Tantuni -->
+      <section class="section" id="tantuni">
+        <div class="section-head"><div class="ico">🫓</div><div><h2>Tantuni</h2><p>Sacda pişen tantuni, lavaşta, somunda ve porsiyon</p></div></div>
+
+        <div class="item">
+          <img class="item-thumb" src="images/lavas-tantuni.jpg" alt="Lavaş Tantuni" loading="lazy" />
+          <div class="item-main"><div class="item-body"><div class="item-name">Lavaş Tantuni <span class="tag new">Yeni</span></div><div class="item-desc">Lavaşa sarılı tantuni</div></div><div class="dots"></div><div class="price">₺180</div></div>
+        </div>
+        <div class="item">
+          <img class="item-thumb" src="images/somun-tantuni.jpg" alt="Somun Tantuni" loading="lazy" />
+          <div class="item-main"><div class="item-body"><div class="item-name">Somun Tantuni</div><div class="item-desc">Somun ekmek arası tantuni</div></div><div class="dots"></div><div class="price">₺180</div></div>
+        </div>
+        <div class="item">
+          <img class="item-thumb" src="images/porsiyon-tantuni.jpg" alt="Porsiyon Tantuni" loading="lazy" />
+          <div class="item-main"><div class="item-body"><div class="item-name">Porsiyon Tantuni</div><div class="item-desc">Tabakta tantuni</div></div><div class="dots"></div><div class="price">₺280</div></div>
+        </div>
+        <div class="item">
+          <img class="item-thumb" src="images/porsiyon-tantuni-yogurtlu.jpg" alt="Porsiyon Tantuni Yoğurtlu" loading="lazy" />
+          <div class="item-main"><div class="item-body"><div class="item-name">Porsiyon Tantuni Yoğurtlu</div><div class="item-desc">Tabakta tantuni, yoğurt ile</div></div><div class="dots"></div><div class="price">₺300</div></div>
+        </div>
+      </section>
+
       <!-- Burger -->
       <section class="section" id="burger">
         <div class="section-head"><div class="ico">🍔</div><div><h2>Burger</h2><p>Tavuk burgerler, patates ve içecekli menü</p></div></div>
@@ -271,6 +302,17 @@
           <img class="item-thumb" src="images/tavuk-burger-menu.jpg" alt="Tavuk Burger Menü" loading="lazy" />
           <div class="item-main"><div class="item-body"><div class="item-name">Tavuk Burger Menü <span class="tag pop">Popüler</span></div><div class="item-desc">Tavuk burger, patates, içecek</div></div><div class="dots"></div><div class="price">₺450</div></div>
         </div>
+      </section>
+
+      <!-- Yan Ürünler -->
+      <section class="section" id="yan-urunler">
+        <div class="section-head"><div class="ico">🍟</div><div><h2>Yan Ürünler</h2><p>Patates, soslar ve peynir ekstraları</p></div></div>
+
+        <div class="drow"><span class="di">🍟</span><span class="dn">Patates Tabağı</span><span class="dd"></span><span class="dv">₺150</span></div>
+        <div class="drow"><span class="di">🧄</span><span class="dn">Özel Sarımsaklı Sos</span><span class="dd"></span><span class="dv">₺50</span></div>
+        <div class="drow"><span class="di">🧀</span><span class="dn">Rendelenmiş Kaşar Peyniri</span><span class="dd"></span><span class="dv">₺50</span></div>
+        <div class="drow"><span class="di">🧀</span><span class="dn">Dilimli Cheddar Peyniri</span><span class="dd"></span><span class="dv">₺50</span></div>
+        <div class="drow"><span class="di">🌶️</span><span class="dn">Acı Sos</span><span class="dd"></span><span class="dv">₺50</span></div>
       </section>
 
       <!-- İçecekler -->
@@ -298,6 +340,17 @@
     </main>
 
     <footer>
+      <div class="cards">
+        <p class="cards__title">Yemek kartı geçerlidir</p>
+        <ul class="cards__grid">
+          <li><img src="images/kartlar/metropol-card.svg" alt="Metropol Card" loading="lazy" /></li>
+          <li><img src="images/kartlar/multinet.svg" alt="Multinet" loading="lazy" /></li>
+          <li><img src="images/kartlar/pluxee.svg" alt="Pluxee" loading="lazy" /></li>
+          <li><img src="images/kartlar/ticket-restaurant.png" alt="Ticket Restaurant · Edenred" loading="lazy" /></li>
+          <li><img src="images/kartlar/setcard.svg" alt="Setcard" loading="lazy" /></li>
+          <li><img src="images/kartlar/token-flex.png" alt="Token Flex" loading="lazy" /></li>
+        </ul>
+      </div>
       <div class="note">
         Tüm ürünlerimiz günlük taze hazırlanır. Fiyatlarımıza KDV dahildir.<br />
         Çocuk menüsü, açık hava oturma alanı ve paket servis mevcuttur.
@@ -305,10 +358,10 @@
       <p class="addr">
         <span class="name">Mahalle Döner</span><br />
         Bitez, Cami Sk. 13-11, 48470 Bodrum / Muğla<br />
-        <a href="tel:+905331924831">0533 192 48 31</a>
+        <a href="tel:+905331924831">0533 192 48 31</a> · <a href="tel:+905331994831">0533 199 48 31</a>
       </p>
       <p style="margin-top:14px;">Afiyet olsun 🤍</p>
-      <p class="credits">Bazı ürün görselleri temsilidir. Tombik: <a href="https://www.flickr.com/photos/70253321@N00/5682840223" target="_blank" rel="noopener">fugzu</a> (CC BY 2.0) · Smash burger: <a href="https://commons.wikimedia.org/wiki/File:Smashburger.jpg" target="_blank" rel="noopener">Kamil</a> (CC BY-SA 4.0) · Tavuk burger: sarahstierch (CC0)</p>
+      <p class="credits">Bazı ürün görselleri temsilidir. Tombik: <a href="https://www.flickr.com/photos/70253321@N00/5682840223" target="_blank" rel="noopener">fugzu</a> (CC BY 2.0) · Smash burger: <a href="https://commons.wikimedia.org/wiki/File:Smashburger.jpg" target="_blank" rel="noopener">Kamil</a> (CC BY-SA 4.0) · Tavuk burger: sarahstierch (CC0) · Lavaş tantuni: <a href="https://commons.wikimedia.org/wiki/File:Tantuni_sokak_yeme%C4%9Fi.jpg" target="_blank" rel="noopener">Joquee</a> (CC BY-SA 4.0) · Somun tantuni: <a href="https://commons.wikimedia.org/wiki/File:Edirne_Tava_Cigeri_Nami_Ciger_Bakirkoy%27de_cekildi-Ekmek_arasi_nefis_edirne_yaprak_cigeri-_2014-04-16_00-30.jpg" target="_blank" rel="noopener">Gugiturko</a> (CC BY-SA 3.0) · Yoğurtlu tantuni: <a href="https://commons.wikimedia.org/wiki/File:Tantuni_Rindfleisch_Teller.jpg" target="_blank" rel="noopener">Fay Freak</a> (CC BY-SA 4.0) · Porsiyon tantuni: Зейнал (CC0)</p>
     </footer>
   </div>
 

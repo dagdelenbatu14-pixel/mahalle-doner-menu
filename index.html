@@ -192,6 +192,13 @@
     @keyframes fadeUp { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
     @keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(70,214,125,.5); } 70% { box-shadow: 0 0 0 9px rgba(70,214,125,0); } 100% { box-shadow: 0 0 0 0 rgba(70,214,125,0); } }
     @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+    .cards { background: #fff; border-radius: 22px; padding: 18px 20px 22px; margin: 22px 0 6px; box-shadow: 0 10px 30px rgba(0,0,0,.35); }
+    .cards__title { margin: 0 0 14px; font-size: 11px; font-weight: 800; letter-spacing: 1.6px; text-transform: uppercase; color: #b8412a; text-align: center; }
+    .cards__grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 14px 16px; }
+    .cards__grid li { display: flex; align-items: center; justify-content: center; height: 48px; }
+    .cards__grid img { max-width: 100%; max-height: 40px; width: auto; height: auto; object-fit: contain; }
+    .cards__grid img[src$="token-flex.png"] { max-height: 30px; }
+    .cards__grid img[src$="ticket-restaurant.png"] { max-height: 46px; }
   </style>
 </head>
 <body>
@@ -208,7 +215,7 @@
       <div class="status">
         <span class="open"><span class="dot"></span> Açık</span>
         <span class="sep">·</span>
-        <span>Her gün 11:00 – 00:00</span>
+        <span>Her gün 10:00 – 00:00</span>
       </div>
     </div>
 
@@ -250,11 +257,23 @@
       <small>Deneyimini paylaş, bize destek ol</small>
     </a>
 
+    <div class="cards">
+      <p class="cards__title">Yemek kartı geçerlidir</p>
+      <ul class="cards__grid">
+        <li><img src="images/kartlar/metropol-card.svg" alt="Metropol Card" loading="lazy" /></li>
+        <li><img src="images/kartlar/multinet.svg" alt="Multinet" loading="lazy" /></li>
+        <li><img src="images/kartlar/pluxee.svg" alt="Pluxee" loading="lazy" /></li>
+        <li><img src="images/kartlar/ticket-restaurant.png" alt="Ticket Restaurant · Edenred" loading="lazy" /></li>
+        <li><img src="images/kartlar/setcard.svg" alt="Setcard" loading="lazy" /></li>
+        <li><img src="images/kartlar/token-flex.png" alt="Token Flex" loading="lazy" /></li>
+      </ul>
+    </div>
+
     <div class="foot">
       <div class="divider"></div>
       <div class="name">Mahalle Döner</div>
       Bitez, Cami Sk. 13-11, Bodrum / Muğla<br />
-      <a href="tel:+905331924831">0533 192 48 31</a>
+      <a href="tel:+905331924831">0533 192 48 31</a> · <a href="tel:+905331994831">0533 199 48 31</a>
       <div style="margin-top:12px;">Afiyet olsun 🤍</div>
     </div>
   </div>
